@@ -1,0 +1,287 @@
+---------------------------
+dataset: W
+no. of CV folds: 5
+no. of instances: 15
+criterion: CrossEntropyLoss
+optimizer: Adam
+learning rate: 1e-3
+batch size: 100
+---------------------------
+
+[0.]
+architecture: MultiLabelNeuralNet
+size of input layer: 64
+size of fully connected layer 1: 144
+dropout chance at fully connected layer 1: 0.1
+
+ROC AUC label 0=0.62 +- 0.01
+ROC AUC label 1=0.64 +- 0.01
+ROC AUC label 2=0.65 +- 0.01
+Overall mean ROC AUC=0.64 +- 0.01
+
+P-R AUC label 0=0.06 +- 0.01
+P-R AUC label 1=0.06 +- 0.01
+P-R AUC label 2=0.07 +- 0.01
+Overall mean PR AUC=0.06 +- 0.01
+
+[1.]
+architecture: MultiLabelNeuralNet_3HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 300
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 108
+dropout chance at fully connected layer 2: 0.1
+size of fully connected layer 3: 324
+dropout chance at fully connected layer 3: 0
+
+ROC AUC label 0=0.62 +- 0.02
+ROC AUC label 1=0.65 +- 0.01
+ROC AUC label 2=0.65 +- 0.01
+Overall mean ROC AUC=0.64 +- 0.02
+
+P-R AUC label 0=0.07 +- 0.02
+P-R AUC label 1=0.06 +- 0.01
+P-R AUC label 2=0.07 +- 0.00
+Overall mean PR AUC=0.07 +- 0.01
+
+[2.]
+architecture: MultiLabelNeuralNet_2HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 208
+dropout chance at fully connected layer 1: 0
+size of fully connected layer 2: 240
+dropout chance at fully connected layer 2: 0.1
+
+ROC AUC label 0=0.60 +- 0.02
+ROC AUC label 1=0.64 +- 0.01
+ROC AUC label 2=0.64 +- 0.01
+Overall mean ROC AUC=0.63 +- 0.02
+
+P-R AUC label 0=0.05 +- 0.01
+P-R AUC label 1=0.05 +- 0.00
+P-R AUC label 2=0.07 +- 0.00
+Overall mean PR AUC=0.06 +- 0.01
+
+[3.]
+architecture: MultiLabelNeuralNet_3HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 320
+dropout chance at fully connected layer 1: 0
+size of fully connected layer 2: 184
+dropout chance at fully connected layer 2: 0.2
+size of fully connected layer 3: 272
+dropout chance at fully connected layer 3: 0.3
+
+ROC AUC label 0=0.63 +- 0.02
+ROC AUC label 1=0.64 +- 0.01
+ROC AUC label 2=0.64 +- 0.01
+Overall mean ROC AUC=0.64 +- 0.02
+
+P-R AUC label 0=0.06 +- 0.01
+P-R AUC label 1=0.06 +- 0.01
+P-R AUC label 2=0.07 +- 0.00
+Overall mean PR AUC=0.07 +- 0.01
+
+[4.]
+architecture: MultiLabelNeuralNet_2HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 320
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 224
+dropout chance at fully connected layer 2: 0.6
+
+ROC AUC label 0=0.63 +- 0.01
+ROC AUC label 1=0.65 +- 0.00
+ROC AUC label 2=0.65 +- 0.01
+Overall mean ROC AUC=0.64 +- 0.01
+
+P-R AUC label 0=0.06 +- 0.01
+P-R AUC label 1=0.06 +- 0.00
+P-R AUC label 2=0.07 +- 0.00
+Overall mean PR AUC=0.07 +- 0.01
+
+[5.]
+architecture: MultiLabelNeuralNet_3HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 112
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 56
+dropout chance at fully connected layer 2: 0.1
+size of fully connected layer 3: 200
+dropout chance at fully connected layer 3: 0.1
+
+ROC AUC label 0=0.62 +- 0.02
+ROC AUC label 1=0.64 +- 0.01
+ROC AUC label 2=0.65 +- 0.01
+Overall mean ROC AUC=0.64 +- 0.02
+
+P-R AUC label 0=0.06 +- 0.01
+P-R AUC label 1=0.05 +- 0.01
+P-R AUC label 2=0.07 +- 0.00
+Overall mean PR AUC=0.06 +- 0.01
+
+[6.]
+architecture: MultiLabelNeuralNet
+size of input layer: 64
+size of fully connected layer 1: 68
+dropout chance at fully connected layer 1: 0
+
+ROC AUC label 0=0.62 +- 0.01
+ROC AUC label 1=0.64 +- 0.01
+ROC AUC label 2=0.65 +- 0.01
+Overall mean ROC AUC=0.64 +- 0.02
+
+P-R AUC label 0=0.07 +- 0.01
+P-R AUC label 1=0.06 +- 0.00
+P-R AUC label 2=0.07 +- 0.00
+Overall mean PR AUC=0.06 +- 0.01
+
+[7.]
+architecture: MultiLabelNeuralNet_3HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 84
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 116
+dropout chance at fully connected layer 2: 0.4
+size of fully connected layer 3: 244
+dropout chance at fully connected layer 3: 0
+
+ROC AUC label 0=0.63 +- 0.01
+ROC AUC label 1=0.66 +- 0.01
+ROC AUC label 2=0.65 +- 0.01
+Overall mean ROC AUC=0.65 +- 0.02
+
+P-R AUC label 0=0.07 +- 0.01
+P-R AUC label 1=0.07 +- 0.01
+P-R AUC label 2=0.08 +- 0.01
+Overall mean PR AUC=0.08 +- 0.01
+
+[8.]
+architecture: MultiLabelNeuralNet_2HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 80
+dropout chance at fully connected layer 1: 0.5
+size of fully connected layer 2: 164
+dropout chance at fully connected layer 2: 0.6
+
+ROC AUC label 0=0.62 +- 0.01
+ROC AUC label 1=0.65 +- 0.01
+ROC AUC label 2=0.65 +- 0.01
+Overall mean ROC AUC=0.64 +- 0.01
+
+P-R AUC label 0=0.06 +- 0.00
+P-R AUC label 1=0.05 +- 0.01
+P-R AUC label 2=0.07 +- 0.00
+Overall mean PR AUC=0.06 +- 0.01
+
+[9.]
+architecture: MultiLabelNeuralNet_2HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 152
+dropout chance at fully connected layer 1: 0
+size of fully connected layer 2: 164
+dropout chance at fully connected layer 2: 0.1
+
+ROC AUC label 0=0.62 +- 0.01
+ROC AUC label 1=0.65 +- 0.01
+ROC AUC label 2=0.65 +- 0.01
+Overall mean ROC AUC=0.64 +- 0.02
+
+P-R AUC label 0=0.06 +- 0.01
+P-R AUC label 1=0.05 +- 0.00
+P-R AUC label 2=0.07 +- 0.00
+Overall mean PR AUC=0.06 +- 0.01
+
+[10.]
+architecture: MultiLabelNeuralNet_3HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 236
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 144
+dropout chance at fully connected layer 2: 0.6
+size of fully connected layer 3: 308
+dropout chance at fully connected layer 3: 0.2
+
+ROC AUC label 0=0.61 +- 0.02
+ROC AUC label 1=0.65 +- 0.01
+ROC AUC label 2=0.65 +- 0.01
+Overall mean ROC AUC=0.64 +- 0.02
+
+P-R AUC label 0=0.07 +- 0.01
+P-R AUC label 1=0.07 +- 0.01
+P-R AUC label 2=0.08 +- 0.00
+Overall mean PR AUC=0.07 +- 0.01
+
+[11.]
+architecture: MultiLabelNeuralNet
+size of input layer: 64
+size of fully connected layer 1: 276
+dropout chance at fully connected layer 1: 0.4
+
+ROC AUC label 0=0.62 +- 0.01
+ROC AUC label 1=0.64 +- 0.01
+ROC AUC label 2=0.65 +- 0.00
+Overall mean ROC AUC=0.64 +- 0.01
+
+P-R AUC label 0=0.06 +- 0.00
+P-R AUC label 1=0.06 +- 0.01
+P-R AUC label 2=0.07 +- 0.01
+Overall mean PR AUC=0.06 +- 0.01
+
+[12.]
+architecture: MultiLabelNeuralNet_3HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 108
+dropout chance at fully connected layer 1: 0.5
+size of fully connected layer 2: 324
+dropout chance at fully connected layer 2: 0
+size of fully connected layer 3: 316
+dropout chance at fully connected layer 3: 0.2
+
+ROC AUC label 0=0.62 +- 0.02
+ROC AUC label 1=0.64 +- 0.00
+ROC AUC label 2=0.64 +- 0.01
+Overall mean ROC AUC=0.63 +- 0.02
+
+P-R AUC label 0=0.06 +- 0.01
+P-R AUC label 1=0.06 +- 0.00
+P-R AUC label 2=0.07 +- 0.01
+Overall mean PR AUC=0.06 +- 0.01
+
+[13.]
+architecture: MultiLabelNeuralNet_2HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 304
+dropout chance at fully connected layer 1: 0.3
+size of fully connected layer 2: 64
+dropout chance at fully connected layer 2: 0.6
+
+ROC AUC label 0=0.63 +- 0.01
+ROC AUC label 1=0.65 +- 0.01
+ROC AUC label 2=0.65 +- 0.01
+Overall mean ROC AUC=0.64 +- 0.01
+
+P-R AUC label 0=0.06 +- 0.01
+P-R AUC label 1=0.06 +- 0.01
+P-R AUC label 2=0.08 +- 0.00
+Overall mean PR AUC=0.07 +- 0.01
+
+[14.]
+architecture: MultiLabelNeuralNet_3HiddenLayer
+size of input layer: 64
+size of fully connected layer 1: 76
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 240
+dropout chance at fully connected layer 2: 0.6
+size of fully connected layer 3: 208
+dropout chance at fully connected layer 3: 0.4
+
+ROC AUC label 0=0.63 +- 0.02
+ROC AUC label 1=0.65 +- 0.01
+ROC AUC label 2=0.66 +- 0.01
+Overall mean ROC AUC=0.65 +- 0.02
+
+P-R AUC label 0=0.06 +- 0.01
+P-R AUC label 1=0.06 +- 0.01
+P-R AUC label 2=0.08 +- 0.01
+Overall mean PR AUC=0.07 +- 0.01

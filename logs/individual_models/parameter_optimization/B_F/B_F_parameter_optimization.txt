@@ -1,0 +1,974 @@
+---------------------------
+dataset: B_F
+no. of CV folds: 5
+no. of instances: 83
+criterion: CrossEntropyLoss
+optimizer: Adam
+learning rate: 1e-3
+batch size: 100
+---------------------------
+
+[0.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 83
+length of filters: 12
+size of fully connected layer 1: 260
+dropout chance at fully connected layer 1: 0.3
+
+ROC AUC=0.69 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[1.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 721
+length of filters: 11
+size of fully connected layer 1: 264
+dropout chance at fully connected layer 1: 0
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[2.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 120
+dropout chance at fully connected layer 1: 0
+size of fully connected layer 2: 260
+dropout chance at fully connected layer 2: 0.2
+size of fully connected layer 3: 68
+dropout chance at fully connected layer 3: 0.5
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[3.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 83
+length of filters: 12
+size of fully connected layer 1: 72
+dropout chance at fully connected layer 1: 0.6
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.00
+
+[4.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 313
+length of filters: 12
+size of fully connected layer 1: 164
+dropout chance at fully connected layer 1: 0.3
+size of fully connected layer 2: 116
+dropout chance at fully connected layer 2: 0.6
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[5.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 278
+length of filters: 12
+size of fully connected layer 1: 232
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 148
+dropout chance at fully connected layer 2: 0.1
+
+ROC AUC=0.69 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[6.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 1181
+length of filters: 12
+size of fully connected layer 1: 48
+dropout chance at fully connected layer 1: 0.6
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[7.]
+architecture: SimpleNeuralNet
+size of input layer: 48
+size of fully connected layer 1: 192
+dropout chance at fully connected layer 1: 0
+
+ROC AUC=0.69 +- 0.00
+P-R AUC=0.42 +- 0.01
+
+[8.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 224
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 308
+dropout chance at fully connected layer 2: 0.1
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[9.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 300
+dropout chance at fully connected layer 1: 0.5
+size of fully connected layer 2: 364
+dropout chance at fully connected layer 2: 0.1
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[10.]
+architecture: SimpleNeuralNet
+size of input layer: 48
+size of fully connected layer 1: 320
+dropout chance at fully connected layer 1: 0.4
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.02
+
+[11.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 473
+length of filters: 12
+size of fully connected layer 1: 136
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.00
+
+[12.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 437
+length of filters: 10
+size of fully connected layer 1: 64
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[13.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 256
+dropout chance at fully connected layer 1: 0.1
+size of fully connected layer 2: 116
+dropout chance at fully connected layer 2: 0.5
+size of fully connected layer 3: 68
+dropout chance at fully connected layer 3: 0
+
+ROC AUC=0.69 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[14.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 101
+length of filters: 11
+size of fully connected layer 1: 88
+dropout chance at fully connected layer 1: 0.5
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[15.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 242
+length of filters: 8
+size of fully connected layer 1: 88
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.69 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[16.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 668
+length of filters: 12
+size of fully connected layer 1: 84
+dropout chance at fully connected layer 1: 0.3
+size of fully connected layer 2: 104
+dropout chance at fully connected layer 2: 0.2
+
+ROC AUC=0.69 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[17.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 349
+length of filters: 10
+size of fully connected layer 1: 148
+dropout chance at fully connected layer 1: 0.5
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.02
+
+[18.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 136
+length of filters: 6
+size of fully connected layer 1: 208
+dropout chance at fully connected layer 1: 0.5
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.45 +- 0.01
+
+[19.]
+architecture: ConvNeuralNet
+shape of input layer: (4, 12)
+no. of output_channels: 349
+length of filters: 5
+size of fully connected layer 1: 140
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.68 +- 0.01
+P-R AUC=0.38 +- 0.01
+
+[20.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 344
+dropout chance at fully connected layer 1: 0.3
+size of fully connected layer 2: 208
+dropout chance at fully connected layer 2: 0.6
+size of fully connected layer 3: 92
+dropout chance at fully connected layer 3: 0.3
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.00
+
+[21.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 224
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 104
+dropout chance at fully connected layer 2: 0
+size of fully connected layer 3: 220
+dropout chance at fully connected layer 3: 0
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[22.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 1394
+length of filters: 9
+size of fully connected layer 1: 80
+dropout chance at fully connected layer 1: 0.1
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[23.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 916
+length of filters: 12
+size of fully connected layer 1: 268
+dropout chance at fully connected layer 1: 0.6
+size of fully connected layer 2: 324
+dropout chance at fully connected layer 2: 0.3
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[24.]
+architecture: ConvNeuralNet
+shape of input layer: (4, 12)
+no. of output_channels: 597
+length of filters: 9
+size of fully connected layer 1: 260
+dropout chance at fully connected layer 1: 0.1
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[25.]
+architecture: ConvNeuralNet
+shape of input layer: (4, 12)
+no. of output_channels: 1288
+length of filters: 11
+size of fully connected layer 1: 80
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.00
+
+[26.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 184
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 296
+dropout chance at fully connected layer 2: 0.2
+size of fully connected layer 3: 232
+dropout chance at fully connected layer 3: 0.6
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[27.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 288
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 224
+dropout chance at fully connected layer 2: 0.1
+size of fully connected layer 3: 200
+dropout chance at fully connected layer 3: 0.1
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[28.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 1217
+length of filters: 12
+size of fully connected layer 1: 180
+dropout chance at fully connected layer 1: 0.6
+size of fully connected layer 2: 172
+dropout chance at fully connected layer 2: 0.4
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[29.]
+architecture: ConvNeuralNet
+shape of input layer: (4, 12)
+no. of output_channels: 526
+length of filters: 11
+size of fully connected layer 1: 152
+dropout chance at fully connected layer 1: 0.5
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[30.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 1057
+length of filters: 12
+size of fully connected layer 1: 276
+dropout chance at fully connected layer 1: 0
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[31.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 721
+length of filters: 12
+size of fully connected layer 1: 304
+dropout chance at fully connected layer 1: 0
+size of fully connected layer 2: 80
+dropout chance at fully connected layer 2: 0.1
+
+ROC AUC=0.69 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[32.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 296
+dropout chance at fully connected layer 1: 0.3
+size of fully connected layer 2: 148
+dropout chance at fully connected layer 2: 0.3
+size of fully connected layer 3: 56
+dropout chance at fully connected layer 3: 0.5
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[33.]
+architecture: ConvNeuralNet
+shape of input layer: (4, 12)
+no. of output_channels: 1376
+length of filters: 3
+size of fully connected layer 1: 148
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.66 +- 0.01
+P-R AUC=0.32 +- 0.01
+
+[34.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 242
+length of filters: 7
+size of fully connected layer 1: 240
+dropout chance at fully connected layer 1: 0.5
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[35.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 1110
+length of filters: 7
+size of fully connected layer 1: 248
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.02
+
+[36.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 83
+length of filters: 12
+size of fully connected layer 1: 60
+dropout chance at fully connected layer 1: 0.1
+size of fully connected layer 2: 384
+dropout chance at fully connected layer 2: 0.3
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[37.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 774
+length of filters: 12
+size of fully connected layer 1: 364
+dropout chance at fully connected layer 1: 0
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[38.]
+architecture: ConvNeuralNet
+shape of input layer: (4, 12)
+no. of output_channels: 1500
+length of filters: 2
+size of fully connected layer 1: 156
+dropout chance at fully connected layer 1: 0.6
+
+ROC AUC=0.62 +- 0.01
+P-R AUC=0.22 +- 0.01
+
+[39.]
+architecture: SimpleNeuralNet
+size of input layer: 48
+size of fully connected layer 1: 68
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[40.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 200
+dropout chance at fully connected layer 1: 0.1
+size of fully connected layer 2: 208
+dropout chance at fully connected layer 2: 0.3
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[41.]
+architecture: ConvNeuralNet
+shape of input layer: (4, 12)
+no. of output_channels: 685
+length of filters: 4
+size of fully connected layer 1: 312
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.67 +- 0.01
+P-R AUC=0.36 +- 0.01
+
+[42.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 280
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 356
+dropout chance at fully connected layer 2: 0.1
+size of fully connected layer 3: 356
+dropout chance at fully connected layer 3: 0.2
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[43.]
+architecture: ConvNeuralNet
+shape of input layer: (4, 12)
+no. of output_channels: 1394
+length of filters: 2
+size of fully connected layer 1: 216
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.61 +- 0.01
+P-R AUC=0.22 +- 0.01
+
+[44.]
+architecture: SimpleNeuralNet
+size of input layer: 48
+size of fully connected layer 1: 252
+dropout chance at fully connected layer 1: 0.1
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.42 +- 0.01
+
+[45.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 252
+dropout chance at fully connected layer 1: 0
+size of fully connected layer 2: 164
+dropout chance at fully connected layer 2: 0.2
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[46.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 1270
+length of filters: 12
+size of fully connected layer 1: 212
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 260
+dropout chance at fully connected layer 2: 0.6
+
+ROC AUC=0.69 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[47.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 1500
+length of filters: 12
+size of fully connected layer 1: 64
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 368
+dropout chance at fully connected layer 2: 0.4
+
+ROC AUC=0.69 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[48.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 280
+dropout chance at fully connected layer 1: 0.1
+size of fully connected layer 2: 164
+dropout chance at fully connected layer 2: 0.6
+size of fully connected layer 3: 340
+dropout chance at fully connected layer 3: 0.6
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[49.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 72
+dropout chance at fully connected layer 1: 0.1
+size of fully connected layer 2: 360
+dropout chance at fully connected layer 2: 0.4
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[50.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 880
+length of filters: 9
+size of fully connected layer 1: 60
+dropout chance at fully connected layer 1: 0.6
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[51.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 296
+length of filters: 2
+size of fully connected layer 1: 84
+dropout chance at fully connected layer 1: 0.3
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[52.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 260
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 108
+dropout chance at fully connected layer 2: 0.5
+size of fully connected layer 3: 296
+dropout chance at fully connected layer 3: 0.2
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[53.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 184
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 384
+dropout chance at fully connected layer 2: 0.2
+size of fully connected layer 3: 380
+dropout chance at fully connected layer 3: 0.1
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[54.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 1181
+length of filters: 12
+size of fully connected layer 1: 124
+dropout chance at fully connected layer 1: 0.1
+
+ROC AUC=0.69 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[55.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 160
+dropout chance at fully connected layer 1: 0.6
+size of fully connected layer 2: 316
+dropout chance at fully connected layer 2: 0.4
+size of fully connected layer 3: 104
+dropout chance at fully connected layer 3: 0.6
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[56.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 272
+dropout chance at fully connected layer 1: 0
+size of fully connected layer 2: 184
+dropout chance at fully connected layer 2: 0.6
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[57.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 862
+length of filters: 3
+size of fully connected layer 1: 120
+dropout chance at fully connected layer 1: 0.1
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[58.]
+architecture: ConvNeuralNet
+shape of input layer: (4, 12)
+no. of output_channels: 508
+length of filters: 7
+size of fully connected layer 1: 104
+dropout chance at fully connected layer 1: 0.5
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.42 +- 0.01
+
+[59.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 224
+dropout chance at fully connected layer 1: 0.3
+size of fully connected layer 2: 100
+dropout chance at fully connected layer 2: 0.2
+size of fully connected layer 3: 360
+dropout chance at fully connected layer 3: 0
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[60.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 349
+length of filters: 12
+size of fully connected layer 1: 188
+dropout chance at fully connected layer 1: 0.1
+
+ROC AUC=0.69 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[61.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 276
+dropout chance at fully connected layer 1: 0.6
+size of fully connected layer 2: 332
+dropout chance at fully connected layer 2: 0.5
+size of fully connected layer 3: 84
+dropout chance at fully connected layer 3: 0.1
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[62.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 248
+dropout chance at fully connected layer 1: 0.6
+size of fully connected layer 2: 96
+dropout chance at fully connected layer 2: 0.3
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[63.]
+architecture: SimpleNeuralNet
+size of input layer: 48
+size of fully connected layer 1: 160
+dropout chance at fully connected layer 1: 0.3
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[64.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 862
+length of filters: 12
+size of fully connected layer 1: 320
+dropout chance at fully connected layer 1: 0
+size of fully connected layer 2: 248
+dropout chance at fully connected layer 2: 0.4
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[65.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 260
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 332
+dropout chance at fully connected layer 2: 0
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[66.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 1358
+length of filters: 9
+size of fully connected layer 1: 104
+dropout chance at fully connected layer 1: 0.6
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[67.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 152
+dropout chance at fully connected layer 1: 0.5
+size of fully connected layer 2: 192
+dropout chance at fully connected layer 2: 0.1
+size of fully connected layer 3: 184
+dropout chance at fully connected layer 3: 0.6
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.00
+
+[68.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 561
+length of filters: 5
+size of fully connected layer 1: 336
+dropout chance at fully connected layer 1: 0.4
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.00
+
+[69.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 124
+dropout chance at fully connected layer 1: 0.1
+size of fully connected layer 2: 176
+dropout chance at fully connected layer 2: 0.5
+size of fully connected layer 3: 272
+dropout chance at fully connected layer 3: 0.5
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
+
+[70.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 360
+dropout chance at fully connected layer 1: 0
+size of fully connected layer 2: 80
+dropout chance at fully connected layer 2: 0.1
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.42 +- 0.01
+
+[71.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 344
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 228
+dropout chance at fully connected layer 2: 0.2
+size of fully connected layer 3: 380
+dropout chance at fully connected layer 3: 0.2
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.00
+
+[72.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 632
+length of filters: 12
+size of fully connected layer 1: 100
+dropout chance at fully connected layer 1: 0.5
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[73.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 332
+dropout chance at fully connected layer 1: 0.2
+size of fully connected layer 2: 200
+dropout chance at fully connected layer 2: 0.2
+size of fully connected layer 3: 124
+dropout chance at fully connected layer 3: 0.2
+
+ROC AUC=0.69 +- 0.00
+P-R AUC=0.43 +- 0.00
+
+[74.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 1181
+length of filters: 5
+size of fully connected layer 1: 208
+dropout chance at fully connected layer 1: 0.2
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[75.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 650
+length of filters: 12
+size of fully connected layer 1: 76
+dropout chance at fully connected layer 1: 0.4
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.00
+
+[76.]
+architecture: ConvNeuralNet_NoPooling
+shape of input layer: (4, 12)
+no. of output_channels: 1305
+length of filters: 10
+size of fully connected layer 1: 324
+dropout chance at fully connected layer 1: 0.4
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[77.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 1358
+length of filters: 12
+size of fully connected layer 1: 252
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 272
+dropout chance at fully connected layer 2: 0.1
+
+ROC AUC=0.69 +- 0.01
+P-R AUC=0.43 +- 0.01
+
+[78.]
+architecture: ConvNeuralNet_NoPooling_NoConving_2HiddenLayer
+shape of input layer: (4, 12)
+no. of output_channels: 1252
+length of filters: 12
+size of fully connected layer 1: 180
+dropout chance at fully connected layer 1: 0.6
+size of fully connected layer 2: 304
+dropout chance at fully connected layer 2: 0.1
+
+ROC AUC=0.69 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[79.]
+architecture: ConvNeuralNet_NoPooling_NoConving
+shape of input layer: (4, 12)
+no. of output_channels: 792
+length of filters: 12
+size of fully connected layer 1: 140
+dropout chance at fully connected layer 1: 0.4
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.43 +- 0.01
+
+[80.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 368
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 116
+dropout chance at fully connected layer 2: 0.4
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[81.]
+architecture: SimpleNeuralNet_3HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 108
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 368
+dropout chance at fully connected layer 2: 0.4
+size of fully connected layer 3: 224
+dropout chance at fully connected layer 3: 0.1
+
+ROC AUC=0.70 +- 0.00
+P-R AUC=0.44 +- 0.01
+
+[82.]
+architecture: SimpleNeuralNet_2HiddenLayer
+size of input layer: 48
+size of fully connected layer 1: 328
+dropout chance at fully connected layer 1: 0.4
+size of fully connected layer 2: 88
+dropout chance at fully connected layer 2: 0
+
+ROC AUC=0.70 +- 0.01
+P-R AUC=0.44 +- 0.01
