@@ -1,0 +1,66 @@
+#B_F
+model = ConvNeuralNet_NoPooling(in_size=12, output_channels=136, hidden_size=208, dropoutp=0.5, conv_size=6)
+
+#B_W
+model = SimpleNeuralNet(in_size=48, hidden_size=336, dropoutp=0.4)
+
+#B_WT
+model = SimpleNeuralNet(in_size=48, hidden_size=200, dropoutp=0.6)
+
+#F_B
+model = SimpleNeuralNet_2HiddenLayer(in_size=64, hidden_size1=240, hidden_size2=144, dropoutp1=0.5, dropoutp2=0.5)
+
+#F_W
+model = SimpleNeuralNet_2HiddenLayer(in_size=64, hidden_size1=208, hidden_size2=176, dropoutp1=0.6, dropoutp2=0.2)
+
+#F_WT
+model = SimpleNeuralNet_3HiddenLayer(in_size=64, hidden_size1=384, hidden_size2=248, hidden_size3=196, 
+                                     dropoutp1=0.4, dropoutp2=0.5, dropoutp3=0.1)
+
+#W_B
+model = SimpleNeuralNet(in_size=64, hidden_size=228, dropoutp=0.1)
+
+#W_F
+model = ConvNeuralNet(in_size=16, output_channels=508, conv_size=8, hidden_size=112, dropoutp=0.4)
+
+#W_WT
+model = ConvNeuralNet(in_size=16, output_channels=792, conv_size=10, hidden_size=284, dropoutp=0.5)
+
+# B
+model = MultiLabelNeuralNet_3HiddenLayer(in_size=in_size,
+                                          hidden_size1=272,
+                                          hidden_size2=160,
+                                          hidden_size3=252,
+                                          dropoutp1=0.3,
+                                          dropoutp2=0.2,
+                                          dropoutp3=0.1)
+
+# F
+model = MultiLabelNeuralNet_3HiddenLayer(in_size=in_size,
+                                          hidden_size1=284,
+                                          hidden_size2=384,
+                                          hidden_size3=196,
+                                          dropoutp1=0.5,
+                                          dropoutp2=0.6,
+                                          dropoutp3=0.4)
+
+# W
+model = MultiLabelNeuralNet_3HiddenLayer(in_size=in_size,
+                                          hidden_size1=84,
+                                          hidden_size2=116,
+                                          hidden_size3=244,
+                                          dropoutp1=0.4,
+                                          dropoutp2=0.4,
+                                          dropoutp3=0)
+
+#FULL
+model = MultiLabelNeuralNet_4HiddenLayer(in_size=in_size, 
+                                         hidden_size1=564,
+                                         hidden_size2=536,
+                                         hidden_size3=112,
+                                         hidden_size4=432,
+                                         dropoutp1=0.4,
+                                         dropoutp2=0.3,
+                                         dropoutp3=0,
+                                         dropoutp4=0.4,
+                                         out_size=9)
